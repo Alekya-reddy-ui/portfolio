@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alekya Portfolio</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      width:100%;
+      background:#111827;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 8%;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav h2{
+      color:#38bdf8;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+    }
+
+    nav ul li{
+      margin-left:25px;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    nav ul li a:hover{
+      color:#38bdf8;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      flex-direction:column;
+      padding:20px;
+      background:linear-gradient(to right,#0f172a,#1e293b);
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:15px;
+    }
+
+    .hero span{
+      color:#38bdf8;
+    }
+
+    .hero p{
+      font-size:22px;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      padding:12px 25px;
+      background:#38bdf8;
+      color:black;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+      transform:scale(1.05);
+    }
+
+    /* SECTION */
+
+    section{
+      padding:80px 10%;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:50px;
+      font-size:40px;
+      color:#38bdf8;
+    }
+
+    /* ABOUT */
+
+    .about p{
+      text-align:center;
+      line-height:1.8;
+      font-size:18px;
+    }
+
+    /* SKILLS */
+
+    .skills-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;
+    }
+
+    .skill-box{
+      background:#1e293b;
+      padding:30px;
+      text-align:center;
+      border-radius:10px;
+      transition:0.3s;
+    }
+
+    .skill-box:hover{
+      transform:translateY(-10px);
+      background:#38bdf8;
+      color:black;
+    }
+
+    /* PROJECTS */
+
+    .projects-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .project-card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:10px;
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      transform:scale(1.05);
+    }
+
+    .project-card h3{
+      margin-bottom:15px;
+      color:#38bdf8;
+    }
+
+    /* RESUME */
+
+    .resume{
+      text-align:center;
+    }
+
+    /* CONTACT */
+
+    .contact-box{
+      text-align:center;
+      line-height:2;
+      font-size:18px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#111827;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+      }
+
+      nav ul{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      nav ul li{
+        margin:10px;
+      }
+
+      .hero h1{
+        font-size:40px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+    <h2>My Portfolio</h2>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <h1>Hello, I'm <span>Alekya</span></h1>
+
+    <p>Full Stack Developer</p>
+    <a href="#projects" class="btn">View Projects</a>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <h2 class="title">About Me</h2>
+
+    <div class="about">
+
+      <p>
+        Hi, I’m Alekya Reddy, a passionate and motivated student interested in Full Stack Web Development. I enjoy building responsive and user-friendly websites using HTML, CSS, JavaScript, and modern web technologies.
+Currently, I am improving my frontend and backend development skills by working on projects and internships. I love learning new technologies, solving problems, and creating creative web applications.
+I am looking for opportunities to grow as a developer, gain real-world experience, and contribute to innovative projects.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <h2 class="title">My Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="skill-box">
+        <h3>HTML</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>CSS</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>JavaScript</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>Responsive Design</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>FULL STACK DEVELOPMENT</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>UI/UX BASICS</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>SQL</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>RDBMS</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+  <h2 class="title">Projects</h2>
+
+  <div class="projects-container">
+
+    <!-- PROJECT 1 -->
+
+    <div class="project-card">
+
+      <h3>Driver Drowsiness deduction System</h3>
+
+      <p>
+        Developed a smart safety system that detects driver drowsiness
+        using eye blinking and facial monitoring techniques to help
+        prevent road accidents and improve driver safety.
+      </p>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+
+    <div class="project-card">
+
+      <h3>Apartment Navigation System</h3>
+
+      <p>
+        Designed a web-based apartment navigation system that helps
+        users easily locate flats, facilities, and directions inside
+        apartment communities using interactive navigation features.
+      </p>
+
+    </div>
+
+    <!-- PROJECT 3 -->
+
+    <div class="project-card">
+
+      <h3>E-Notice Board for College Community</h3>
+
+      <p>
+        Built a digital e-notice board system for colleges to share
+        announcements, events, circulars, and updates efficiently
+        among students, faculty, and administrators.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- RESUME -->
+
+  <section id="resume">
+
+    <h2 class="title">Resume</h2>
+
+    <div class="resume">
+
+      <a href="CV RESUME 2.pdf" class="btn">Download Resume  </a>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact-box">
+
+      <p>Email: katipallalekyagmail.com</p>
+
+      <p>Phone: +91 6301560353</p>
+
+      <p>LinkedIn: linkedin.com/in/alekya-katipally-3293903b7</p>
+
+      <p>GitHub:github.com/Alekya-reddy-ui</p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>© 2026 Alekya Portfolio | All Rights Reserved</p>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    // Fade Animation on Scroll
+
+    const sections = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", () => {
+
+      sections.forEach(section => {
+
+        const sectionTop = section.getBoundingClientRect().top;
+
+        if(sectionTop < window.innerHeight - 100){
+
+          section.style.opacity = "1";
+          section.style.transform = "translateY(0px)";
+        }
+
+      });
+
+    });
+
+    sections.forEach(section => {
+
+      section.style.opacity = "0";
+      section.style.transform = "translateY(50px)";
+      section.style.transition = "all 1s";
+
+    });
+
+  </script>
+
+</body>
+</html>
