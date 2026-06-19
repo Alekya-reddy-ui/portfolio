@@ -58,6 +58,4 @@ This project was developed as part of the CodeAlpha Frontend Development Interns
 
 Alekya Reddy
 
-## Internship
 
-CodeAlpha Frontend Development Internship
